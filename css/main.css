@@ -1,0 +1,487 @@
+@import 'fonts.css';
+*{
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'roboto';
+}
+/* icons */
+*::before,
+*::after{
+    font-family: 'icons';
+    font-weight: 300;
+}
+.icon-profil::before{
+    content: '\f007';
+}
+.icon-vopros::before{
+    content: '\f059';
+}
+.icon-shop::before{
+    content: '\f07a';
+}
+.icon-cloud::before{
+    content: '\e07d';
+}
+
+
+/* navabr */
+.navbar-list,
+.navbar-contacts,
+.navbar-menu{
+    display: flex;
+    gap: 10px;
+    
+}
+.navbar a{
+    color: #212A2F;
+    font-size: 12px;
+    line-height: 21px;
+}
+.navbar-brand img{
+    width: 120px;
+    height: 40px;
+    object-fit: contain;
+}
+.navbar-btn{
+    width: 50px;
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.navbar-btn span,
+.navbar-btn button{
+    width: 100%;
+    height: 10px;
+    background: gold;
+    border-radius: 4px;
+}
+.dropdown-menu{
+    background: gray;
+}
+/* header */
+.header{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;  
+}
+.header img{
+    width: 100%;
+    height: 740px;
+    object-fit: cover;
+    position: relative;
+}
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+.header-content h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+}
+.header-content p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.btn{
+    background: white;
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: 'roboto';
+}
+/* boots */
+.boots{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.boots h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+}
+.boots-menu{
+    display: flex;
+    justify-content: center;
+    gap: 132px;
+    align-items: center;
+    border-bottom: 2px gray solid;
+}
+.boots-menu a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212A2F;
+}
+.boots-menu a:hover{
+    color: black;
+    border-bottom: 3px solid black;
+}
+.boots-box{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+.boot-item{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boot-img{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.boot-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.boot-btn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.boot-item h5{
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 29px;
+   width: 90%;
+   text-align: left;
+   border-bottom: 1px gray solid;
+}
+.boot-foot{
+    width: 90%;
+    display: flex;
+}
+.boot-foot-img{
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 0px;
+}
+.boot-foot-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.boot-foot p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #212A2F;
+}
+/* season */
+.season{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+.season img{
+    width: 100%;
+    height: 542px;
+    object-fit: cover;
+    position: relative;
+}
+.season-content{
+    /* border: red solid 2px; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.season-content h4{
+    color: black;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+}
+.season-content p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+/* collections */
+.collections{
+    margin-top: 132px;
+}
+.collections h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+}
+.items{
+    display: flex;
+    gap: 15px;
+}
+.item img{
+    width: 100%;
+    height: 396px;
+    object-fit: contain;
+}
+.item{
+    width: 32%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    
+}
+.item h5{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+}
+.item{
+    font-size: 16px;
+    line-height: 24px;
+    color: #212A2F;
+}
+/* email */
+.email{
+    margin-top: 132px;
+}
+.gmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.gmail h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+}
+.gmail p{
+    font-size: 16px;
+    line-height: 22px;
+}
+.sign input{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.22);
+}
+.gmail-btn{
+    padding: 5px;
+    background: #212A2F;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: white;
+}
+.gmail-a{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.gmail-a a{
+    color: #74797C;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+}
+/* footer */
+.footer{
+    background: #212A2F;
+    padding: 50px;
+    margin-top: 50px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 50px;
+}
+footer p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+.footer-menu ul{
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu h4{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 20px;
+}
+.footer-menu a{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+}
+.footer-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-text{
+    width: 30%;
+}
+.main-vector{
+    display: flex;
+    gap: 10px;
+}
+.main-vector img{
+    width: 50px;
+    height: 30px;
+    object-fit: contain;
+}
+.pharaghrph{
+   display: flex;
+   text-align: center;
+}
+.main-menu{
+    display: none;
+}
+
+.main-menu a,
+.main-menu h4,
+.main-menu h5{
+    color: #212A2F;
+}
+.menu2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+.menu2 ul{
+    display: flex;
+    flex-direction: column;
+}
+.menu2 h4{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 20px;
+    color: #212A2F;
+}
+.menu2 a{
+    color: #212A2F;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:992px){
+    .header,
+    .header-content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .boots,
+    .season,
+    .collections,
+    .email{
+        margin-top: 50px;
+    }
+    .none{
+        display: none;
+    }
+    .item{
+        width: 100%;
+        min-height: 400px;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .main-menu{
+        display: flex;
+    }
+   
+
+}
+@media(max-width:768px){
+    .navbar-btn{
+        display: flex;
+    }
+    .navbar-list,
+    .navbar-menu{
+        display: none;
+    }
+    .header img,
+    .season img{
+        height: 400px;
+    }
+    .boots-box{
+        flex-direction: column;
+    }
+    .footer-main{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-text{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .header-content h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .boots-menu{
+        gap: 15px;
+    }
+    .collections h2{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .gmail-a{
+        flex-direction: column;
+    }
+}
